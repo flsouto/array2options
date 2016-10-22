@@ -14,6 +14,6 @@ function array2options($array, $select=null){
 		$assoc[$value] = $value;
 	}
 
-	return assoc2options($array, $select);
+	return assoc2options($assoc, $select);
 
 }
