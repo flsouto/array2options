@@ -1,0 +1,17 @@
+{
+    "name": "flsouto/array2options",
+    "description": "Functions for generating option tags to be inserted in select elements",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Fabio Souto",
+            "email": "fabiolimasouto@gmail.com"
+        }
+    ],
+    "keywords" : ["html","helpers","forms","ui"],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" : {
+        "files" : ["array2options.php","assoc2options.php","dataset2options.php"]
+    }
+}
