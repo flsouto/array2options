@@ -12,6 +12,7 @@ function assoc2options($assoc, $select=null){
 	foreach($assoc as $k => $v){
 		$select = !is_null($select) && $select==$k ? ' selected' : '';
 		$options .= '<option value="'.$k.'"'.$select.'>'.$v.'</option>';
+		$options .= "\n";
 	}
 
 	return $options;
