@@ -4,8 +4,8 @@
  * Generates <option> tags to be inserted in an html select element
  * Each value of the given array will be used as both key and value
  *
- * @param $array array array of scalars
- * @param $select mixed key to be selected
+ * @param array $array array of scalars
+ * @param mixed $select key to be selected
 */
 function array2options($array, $select=null){
 

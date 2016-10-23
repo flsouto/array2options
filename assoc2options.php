@@ -3,8 +3,8 @@
 /**
  * Generates <option> tags to be inserted in an html select element
  *
- * @param $assoc array associative array
- * @param $select mixed key to be selected
+ * @param array $assoc associative array
+ * @param mixed $select key to be selected
 */
 function assoc2options($assoc, $select=null){
 
