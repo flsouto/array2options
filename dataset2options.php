@@ -16,5 +16,5 @@ function dataset2options($dataset, $select=null){
 		$assoc[$k] = $v;
 	}
 
-	return assoc2options($dataset, $select);
+	return assoc2options($assoc, $select);
 }
