@@ -106,15 +106,15 @@ require_once('vendor/autoload.php');
 // Rows fetched from database
 $rows = [
 	[
-		'id' => 1,
+		'id' => 93,
 		'name' => 'Category 1'
 	],
 	[
-		'id' => 2,
+		'id' => 102,
 		'name' => 'Category 2'
 	],
 	[
-		'id' => 3,
+		'id' => 106,
 		'name' => 'Category 3'
 	]
 ];
@@ -133,11 +133,15 @@ The above will produce as expected:
 ```
 <select name="category_id">
 <option value="0">Choose a Category</option>
-<option value="1">Category 1</option>
-<option value="2">Category 2</option>
-<option value="3">Category 3</option>
+<option value="93">Category 1</option>
+<option value="102">Category 2</option>
+<option value="106">Category 3</option>
 </select>
 ```
+
+This function works by looking at the first attribute of each array, for determining the "value" of each option, and then looks at the second attribute for determing the "label". So it doesn't matter if your dataset contains more data besides just id and name of an object, as long as these attributes come in the first and second positions respectively.
+
+*Notice*: the dataset2options also allows you to set an option as "selected" just like array2option and assoc2options do.
 
 # Final thoughts
 
@@ -145,4 +149,4 @@ Even though it is relatively simple to iterate over arrays and print out tags in
 
 ## Why not generate the whole select widget?
 
-I hear some complain that this library doesn't help build the entire "select" element. However, if you think about it, there is no difficulty in producing the select tag. The somewhat "complexity" lies in the generation of the variable content that goes inside it. Besides, this way you can customize the select tag using plain html code without having to learn weird APIs. Learn and use an API that does something useful, not one that reinvents the wheel.
+I hear some complain that this library doesn't help build the entire "select" element. However, if you think about it, there is no difficulty in making the select tag. The somewhat "complexity" lies in the generation of the variable content that goes inside it. Besides, this way you can customize the select tag using plain html code without having to learn weird APIs. Learn and use an API that does something useful, not one that reinvents the wheel.
